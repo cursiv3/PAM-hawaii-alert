@@ -7,16 +7,21 @@ body {
   font-size: 16px;
 }
 
+a {
+  text-decoration: none;
+}
+
 input {
   max-width: 100%;
 }
 
-input:hover {
+input:hover,
+button:hover {
   cursor: pointer;
 }
 
-a {
-  text-decoration: none;
+form {
+  padding: 15px;
 }
 
 p {
@@ -26,30 +31,26 @@ p {
   font-weight: bold;
 }
 
-form {
-  padding: 15px;
-}
-
-.interface-container {
-  text-align: center;
-  width: 70%;
-  background-color: gray;
-  border-radius: 5px;
-  box-sizing: border-box;
-  border: 1px solid black;
-  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.6);
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  padding: 15px;
-  font-family: "Courier New";
+.alert-button {
+  width: 50%;
+  min-height: 70px;
+  font-size: 28px;
+  border: 2px solid maroon;
+  margin: 25px;
   color: white;
+  background-color: red;
+  text-align: center;
 }
 
-.govt-logo-wrapper img {
-  height: 200px;
+.confirm-text {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+
+.confirm-text p {
+  width: 100%;
+  font-size: 18px;
 }
 
 .entry-yes-button {
@@ -72,15 +73,26 @@ form {
   background-color: green;
 }
 
-.alert-button {
-  width: 50%;
-  min-height: 70px;
-  font-size: 28px;
-  border: 2px solid maroon;
-  margin: 25px;
-  color: white;
-  background-color: red;
+.govt-logo-wrapper img {
+  height: 200px;
+}
+
+.interface-container {
   text-align: center;
+  width: 70%;
+  background-color: gray;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.6);
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 15px;
+  font-family: "Courier New";
+  color: white;
 }
 
 .test-button {
@@ -99,17 +111,6 @@ form {
   width: 70%;
   box-sizing: border-box;
   border: 3px solid white;
-}
-
-.confirm-text {
-  width: 80%;
-  margin: auto;
-  text-align: left;
-}
-
-.confirm-text p {
-  width: 100%;
-  font-size: 18px;
 }
 
 @media screen and (max-width: 930px) {
@@ -137,18 +138,18 @@ form {
   }
 }
 
-@media screen and (max-width: 390px) {
-  .interface-container {
-    top: 0;
-    transform: translate(-50%, 0);
-  }
-}
-
 @media screen and (max-width: 415px) {
   .interface-container {
     width: 90%;
   }
   .test-button {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .interface-container {
+    top: 0;
+    transform: translate(-50%, 0);
   }
 }
