@@ -1,0 +1,45 @@
+body, html {
+    background-color: red;
+    animation: alert 1s infinite;
+}
+
+.alert-button-final {
+    height: 40px;
+    font-size: 28px;
+    border: 2px solid maroon;
+    margin: 25px;
+    color: white;
+    background-color: red;
+    margin: 0;
+    font-weight: bold;
+}
+
+.confirm-text p { 
+    width: 100%;
+    font-size: 18px;
+}
+
+@keyframes alert {
+    0% { background-color: red;}
+    50% {background-color: white;}
+    100% {background-color: red;}
+}
+
+@media screen and (max-width: 560px) {
+    .alert-button-final {
+        font-size: 20px;
+    }
+    .confirm-text {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .alert-button-final {
+        font-size: 16px;
+    }
+    .interface-container {
+        top: 0;
+        transform: translate(-50%, 0);
+    }
+}
