@@ -15,11 +15,6 @@ input {
   max-width: 100%;
 }
 
-input:hover,
-button:hover {
-  cursor: pointer;
-}
-
 form {
   padding: 15px;
 }
